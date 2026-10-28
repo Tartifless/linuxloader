@@ -53,7 +53,6 @@ void bridgeGlutInit(int *argcp, char **argv)
 
 void bridgeGlutMainLoop(void)
 {
-
     bool quit = false;
     while (!quit)
     {
@@ -113,7 +112,7 @@ void bridgeGlutSwapBuffers(void)
     fpsOverlayUpdateFps(fps_val);
 
     if (gId == MJ4_SBPN_REVG || gId == MJ4_EVO_SBTA)
-        mj4TouchHolding();
+        eloTouchHolding();
 }
 
 int bridgeGlutEnterGameMode(void)

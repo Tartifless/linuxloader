@@ -24,3 +24,5 @@ void initBlitting();
 void blitSetWidthandHeightSize();
 int blitInitializeFbo();
 void blitStretch();
+void blitWindowToRender(float windowX, float windowY, float *renderX, float *renderY);
+void blitRenderToWindow(float renderX, float renderY, float *windowX, float *windowY);
